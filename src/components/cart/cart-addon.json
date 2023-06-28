@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_menu_cart_addons",
+  "info": {
+    "displayName": "cart_item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menu_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-item.menu-item"
+    }
+  }
+}

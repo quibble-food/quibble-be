@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_menu_addons",
+  "info": {
+    "displayName": "addon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "addon_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.addon-item"
+    },
+    "required": {
+      "type": "boolean",
+      "required": false
+    },
+    "select_type": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "multiple"
+      ],
+      "required": true,
+      "default": "single"
+    },
+    "limit": {
+      "type": "integer"
+    }
+  }
+}

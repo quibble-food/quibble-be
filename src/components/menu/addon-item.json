@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_menu_addon_items",
+  "info": {
+    "displayName": "addon_item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "veg": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

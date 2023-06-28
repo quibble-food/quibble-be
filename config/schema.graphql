@@ -1,0 +1,31 @@
+input AdvancedSettingsInput {
+  mySetting: String
+}
+
+type AdvancedSettings {
+  mySetting: String
+}
+
+type UsersPermissionsPluginSettings {
+  advanced: AdvancedSettings
+}
+
+extend type Query {
+  usersPermissionsSettings: UsersPermissionsPluginSettings!
+}
+
+extend type Mutation {
+  updateUsersPermissionsSettings(input: UsersPermissionsPluginSettings!): UsersPermissionsPluginSettings!
+}
+
+extend type UsersPermissionsPluginSettingsPayload {
+  advanced: AdvancedSettings!
+}
+
+input UpdateUsersPermissionsSettingsInput {
+  advanced: AdvancedSettingsInput
+}
+
+extend type AdvancedSettings {
+  mySetting: String @default(abcs: "myDefaultValue")
+}

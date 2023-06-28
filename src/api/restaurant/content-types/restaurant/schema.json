@@ -56,6 +56,18 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "restaurant"
+    },
+    "menu_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-item.menu-item",
+      "mappedBy": "restaurant"
+    },
+    "cart": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cart.cart",
+      "mappedBy": "restaurant"
     }
   }
 }

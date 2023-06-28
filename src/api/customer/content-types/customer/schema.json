@@ -19,6 +19,12 @@
     },
     "dob": {
       "type": "date"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "customer"
     }
   }
 }
